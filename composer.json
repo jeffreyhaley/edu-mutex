@@ -1,0 +1,33 @@
+{
+  "name": "mattersight/portal-service-framework-mutex",
+  "description": "Portal Service Framework Mutex",
+  "type": "zend-module",
+  "config": {
+    "secure-http": false
+  },
+  "extra": {
+    "installer-paths": {
+      ".build/build-tool": [
+        "mattersight/build-tool"
+      ]
+    }
+  },
+  "require": {
+    "composer/installers": "1.0.25",
+    "mattersight/build-tool": "@dev"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://artifactory.mattersight.local/artifactory/api/composer/mattersight-lib-phpcomposer-snapshot/"
+    },
+    {
+      "type": "composer",
+      "url": "https://artifactory.mattersight.local/artifactory/api/composer/Packagist"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "prefer-stable": true
+}
